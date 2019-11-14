@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8">
+    <title>Resume</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300|Raleway:300&display=swap" rel="stylesheet">
+    <style>
+    html, body{
+      font-family: 'Lato', sans-serif;
+      margin: 0;
+      overflow-wrap: break-word;
+    }
+    .grid-container {
+      width: 100vw;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "Side Main";
+    }
+    .grid-container div{
+        padding: 10px;
+    }
+
+    .Side {
+      display: grid;
+      grid-template-rows:  0.25fr 0.25fr 1fr;
+      grid-template-areas: "." "." ".";
+      grid-area: Side;
+      background-color: #eeccff;
+    }
+    .Side div{
+      border-bottom: 1px solid white;
+    }
+    .Side ul{
+      list-style-type: square;
+    }
+    .details{
+      text-align: center;
+    }
+
+    .Main {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.25fr 0.5fr 0.25fr 1fr;
+      grid-template-areas: "." "." "." ".";
+      grid-area: Main;
+    }
+    .Main h2{
+      padding-bottom: 5px;
+      border-bottom: 1px solid #a6a6a6;
+    }
+    .objective p{
+      font-size: 1.25rem;
+      text-align: justify;
+    }
+    .experience p{
+      font-size: 1.15rem;
+    }
+    .experience h3{
+      padding-top: 15px;
+    }
+    h1{
+      font-variant: small-caps;
+      font-family: 'Raleway', sans-serif;
+    }
+    table{
+      width: 100%;
+    }
+    table, tr, td, th{
+      padding: 5px;
+      border: 1px solid #2f2f2f;
+      border-collapse: collapse;
+    }
+    </style>
+  <body>
+    <div class="grid-container">
+      <div class="Side">
+
+        <div class="details">
+          <h1>Shalette Natasha D'Souza</h1>
+        </div>
+
+        <div class="contact">
+          <h3>CONTACT INFORMATION</h3>
+          <ul>
+            <li><p><b>Phone Number:</b> +91 8861556855</p></li>
+            <li><p><b>Email:</b> shalettedsouza@gmail.com</p></li>
+            <li><p><b>Linkedin Profile:</b> https://in.linkedin.com/in/shalette-d-souza</p></li>
+            <li><p><b>Website:</b> https://shalette.github.io/</p></li>
+          </ul>
+        </div>
+
+        <div class="skills">
+          <h3>SKILLS</h3>
+          <ul>
+            <li><p><b>Programming Languages: </b>PHP, SQL, HTML, CSS, Ajax, JQuery, JavaScript, Java, Python, C</p></li>
+            <li><p><b>Frameworks, Libraries and Systems: </b>Google Materialize, Bootstrap, Material UI, CSS Grid, Flexbox, Django, React, Laravel, Flask</p></li>
+            <li>
+              <b>Miscellaneous:</b>
+              <ul style="list-style-type: circle">
+                <li><p>Strong Work Ethic</p></li>
+                <li><p>Thirst For Learning</p></li>
+                <li><p>Adaptability</p></li>
+                <li><p>Communication Skills</p></li>
+                <li><p>Creativity</p></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="projects">
+          <h3>PROJECTS</h3>
+          <ul>
+            <li><p><b>InfoCrypt<br><small>[Aug 2019 – Ongoing]</small></b><br>&ensp;Aim to create a model that can work using encrypted data</p></li>
+            <li><p><b>Sniprise<br><small>[Mar 2019 – May 2019]</small></b><br>&ensp;A document summariser built using Python, based on the TextRank Algorithm</p></li>
+            <li><p><b>Particle System<br><small>[Apr 2019 – May 2019]</small></b><br>&ensp;Bubble Generator, created using OpenGL</p></li>
+            <li><p><b>CMS<br><small>[Jan 2019 – Mar 2019]</small></b><br>&ensp;Complaint Management System to record and track complaints lodged. Built using PHP</p></li>
+            <li><p><b>E-Commerce Website<br><small>[Oct 2018 – Dec 2018]</small></b><br>&ensp;Created using Bootstrap, as part of the internship at Selectiall</p></li>
+          </ul>
+          <br>
+        </div>
+
+      </div>
+
+      <div class="Main">
+        <div class="objective">
+          <h2>SUMMARY</h2>
+          <p>Currently pursuing B.E. in Computer Science & Engineering in BMS Institute of Technology. Will graduate in the year 2020. As a passionate web developer and designer, I strive to work hard to increase my knowledge. The communication and presentation skills I possess, along with a healthy sense of realism let me work in a team effectively.</p>
+        </div>
+
+        <div class="experience">
+          <h2>EXPERIENCE</h2>
+          <h3>Design Intern</h3>
+          <p><b><i>CocoFresh (Sept 2019)</i></b> - Logo Designer</p>
+
+          <h3>Web Development Intern</h3>
+          <p><b><i>Selectiall (Oct 2018 - Dec 2018)</i></b> - Frontend Developer &amp; Database Designer</p>
+
+          <h3>Marketing Intern</h3>
+          <p><b><i>H.O.P.E (Jan 2018 - Apr 2018)</i></b> - Market Researcher, Design &amp; Presentation Coordinator, Content Writer</p>
+          </ul>
+        </div>
+
+        <div class="education">
+          <h2>EDUCATION</h2>
+          <table>
+            <thead><tr><th>Qualification</th><th>Board</th><th>Institute</th><th>Year Of Passing</th><th>Score</th></tr></thead>
+            <tbody>
+              <tr>
+                <td>B.E.</td>
+                <td>V.T.U.</td>
+                <td>BMS Institute of Technology</td>
+                <td>2020 (to be completed)</td>
+                <td>8.13 (CGPA up to 6th semester)</td>
+              </tr>
+
+              <tr>
+                <td>P.U.</td>
+                <td>Karnataka</td>
+                <td>B.E.L. Composite P.U. College</td>
+                <td>2016</td>
+                <td>94.3%</td>
+              </tr>
+
+              <tr>
+                <td>Class 10</td>
+                <td>I.C.S.E.</td>
+                <td>M.E.S. Kishore Kendra Public School</td>
+                <td>2014</td>
+                <td>94.3%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="accomplishments">
+          <h2>ACCOMPLISHMENTS</h2>
+          <ul>
+            <li><p>Scored 331/340 on the GRE and 116/120 on the TOEFL in July 2019</p></li>
+            <li><p>Won 2nd place in Solo Singing out of 100 students during Utsaha 2019</p></li>
+            <li><p>Secured 19th place among more than 2000 participants in a national level mock placement competition, Placement Heat 2.0, conducted by Talent Battle in 2018</p></li>
+            <li><p>Obtained 2nd place consecutively in the three most recent college project presentations (PBLs)</p></li>
+            <li><p>Won multiple choir competitions in Bangalore</p></li>
+          </ul>
+          <h2>ACTIVITIES</h2>
+          <ul>
+            <li><p>Fiction Writing</p></li>
+            <li><p>Book Cover Designing</p></li>
+            <li><p>Solo and Choir Singing</p></li>
+            <li><p>Instrumententalist</p></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
